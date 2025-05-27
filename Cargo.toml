@@ -4,7 +4,12 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-bevy = { version = "0.15.3", features = ["dynamic_linking"] }
+eframe = "*"
+egui_extras = { version = "*", features = ["default", "all_loaders"] }
+image = { version = "*", features = ["jpeg", "png"] }
+env_logger = "0.10"
+rfd = "*"
+tokio = { version = "*", features = ["rt-multi-thread", "time" ] }
 
 [profile.dev]
 opt-level = 1
